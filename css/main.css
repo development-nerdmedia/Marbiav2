@@ -170,6 +170,7 @@ main{
     outline: none !important;
     font-weight: 400;
     font-size: 17px;
+    padding: 11px 23px;
     background-color: #fff;
     border: none !important;
 }
@@ -194,6 +195,8 @@ main{
 
 .grid-productos .producto .info button{
     background-color: transparent;    
+    border: none;
+    cursor: pointer;
 }
 
 .grid-productos .producto .info p {
@@ -226,3 +229,381 @@ main{
     grid-gap: 57px;
 }
 
+
+.banner-img{
+    padding: 100px 0;
+}
+.banner-img .content{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.banner-img .content img{
+    width: 81.2%;
+}
+.banner-img .content .info{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+}
+
+.banner-img .content .info h2{
+    font-weight: 500;
+    font-size: 29px;
+    text-align: center;
+}
+
+.banner-img .content .info p{
+    font-weight: 500;
+    font-size: 21px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+footer .redes{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 70px;
+    padding: 0 90px;    
+    padding-bottom: 80px;
+}
+footer .redes p{
+    padding-top: 40px;
+    font-weight: 400;
+    font-size: 29px;
+    color: #050505;
+}
+footer .redes a{
+    font-weight: 400;
+    font-size: 29px;
+    text-decoration: none;
+    color: #000;
+}
+footer .redes img{
+    opacity: 0.5;
+}
+footer .copi{
+    background-color: #CDCDCD;
+    display: flex;
+    justify-content: center;
+}
+footer .copi p{
+    padding: 35px 0;
+    color: #7E7E7E;    
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.detalles{
+    padding: 100px 0;
+}
+
+.detalles .container{
+    width: 80%;
+}
+
+.detalles .content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.detalles .content .part2{
+    width: 57%;
+    padding-left: 75px;
+}
+
+.detalles .content .part1{
+    width: 43%;
+}
+
+.detalles .content .part1 img {
+    width: 100%;
+}
+
+.detalles .caracteristicas1{
+    margin-top: 20px;
+}
+
+.detalles .caracteristicas1 div{
+    display: flex;
+    align-items: flex-end;
+    margin-top: 15px;
+}
+
+.detalles .caracteristicas1 div img{
+    margin-right: 15px;
+}
+
+.detalles .caracteristicas1 div p span{
+    font-weight: 600;
+    font-size: 21px;
+}
+
+.detalles .caracteristicas1 div p{
+    font-weight: 400;
+    font-size: 21px;
+}
+
+.detalles .caracteristicas2 h3{
+    font-weight: 500;
+    font-size: 21px;
+    padding-top: 37px;
+}
+
+.detalles .caracteristicas2 ul{
+    padding-left: 20px;
+    padding-top: 18px;
+}
+
+.detalles .caracteristicas2 ul li {
+    font-weight: 400;
+    font-size: 21px;
+    padding: 9px 0;
+}
+
+section.video {
+    padding: 100px 0;
+    background-image: url(../images/fondo-video.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+
+section.video .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.video h2{
+    font-weight: 400;
+    font-size: 29px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+section.video iframe{
+    width: 60% !important;
+    height: 615px !important;
+}
+
+section.acordeon{
+    padding: 100px 0;
+}
+
+section.acordeon h2{
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+/* Accordion styles */
+.acordeon .tabs {
+    margin: 0 auto;
+    width: 80%;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+.acordeon .tab {
+    width: 100%;
+    color: #000;
+    overflow: hidden;
+  }
+.acordeon .tab-label {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    /* background: #2c3e50; */
+    border-radius: 24px;
+    border: 1px solid #000;
+    font-weight: bold;
+    cursor: pointer;
+    /* Icon */
+    margin: 10px 0;
+    font-weight: 400;
+    font-size: 21px;
+  }
+.acordeon .tab-label::after {
+    content: "❯";
+    width: 1em;
+    height: 1em;
+    text-align: center;
+    transition: all 0.35s;
+  }
+.acordeon .tab-content {
+    max-height: 0;
+    padding: 0 1em;
+    color: #2c3e50;
+    background: white;
+    transition: all 0.35s;
+  }
+.acordeon .tab-content ul{
+    padding-left: 40px;
+  }
+
+.acordeon .tab-content ul li{
+    font-weight: 400;
+    font-size: 21px;
+  }
+.acordeon .tab-close {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1em;
+    font-size: 0.75em;
+    background: #2c3e50;
+    cursor: pointer;
+  }
+.acordeon .tab-close:hover {
+    background: #1a252f;
+  }
+
+.acordeon input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+  }
+  
+.acordeon input:checked + .tab-label {
+    background: #1a252f;    
+    color: #fff;
+  }
+.acordeon input:checked + .tab-label::after {
+    transform: rotate(90deg);
+  }
+.acordeon input:checked ~ .tab-content {
+    background-color: #CDCDCD;
+    max-height: 100vh;
+    padding: 1em;
+    border-radius: 24px;
+  }
+
+.contacto{
+    padding: 100px 0;
+    background-image: url(../images/fondo-contacto.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+
+.contacto h2,
+.contacto p{
+    text-align: center;
+    color: #fff;
+}
+
+.contacto h2{
+    font-weight: 400;
+    font-size: 29px;
+}
+
+.contacto p{
+    font-weight: 400;
+    font-size: 21px;
+}
+
+form{
+    margin-top: 43px;
+    width: 50%;
+    margin-right: 40px;
+}
+
+form fieldset{
+    border: none;
+}
+
+form fieldset .form-group{
+    width: 100%;
+    position: relative;
+}
+
+form fieldset .form-group input {
+    margin-bottom: 30px;
+    height: 64px;
+    border: none;
+    font-size: 20px;
+    width: 100%;
+    color: #fff;
+    background: transparent;
+    padding: 0 20px;
+    padding-top: 8px;
+    border: 2px solid #fff;
+    border-radius: 0px;
+    -webkit-border-radius: 0;
+    -webkit-appearance: none;
+}
+
+form fieldset .form-group input:focus {
+    outline-style: none;
+} 
+
+form fieldset .form-group .form-label {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;   
+    transition: 0.1s linear;
+    z-index: 1;
+}
+
+form fieldset .form-group input:valid ~ label, 
+form fieldset .form-group input:focus ~ label, 
+form fieldset .form-group textarea:valid ~ label, 
+form fieldset .form-group textarea:focus ~ label {
+    font-size: 14px;
+    left: 20px;
+    top: 6px;
+}
+
+form fieldset .form-group textarea {
+    font-family: var(--fuente-barlow);
+    margin-bottom: 50px;
+    height: 155px;
+    border: none;
+    font-size: 20px;
+    width: 100%;
+    color: #fff;
+    border: 2px solid #fff;
+    background: transparent;
+    padding: 0 20px;
+    padding-top: 22px;
+    border-radius: 0px;
+    -webkit-border-radius: 0;
+    -webkit-appearance: none;
+}
+form fieldset .form-group textarea:focus {
+    outline-style: none;
+  }
+
+form fieldset .form-group.focusin label,
+form fieldset .form-group.ok label{
+    font-size: 14px;
+    left: 20px;
+    top: 6px;
+}
+
+       
+form fieldset button{
+    border-radius: 0px;
+    -webkit-border-radius: 0;
+    -webkit-appearance: none;
+    padding: 11px 25px;
+    font-family: var(--fuente-prompt);
+    font-weight: 500;
+    font-size: 20px;
+    background-color: transparent;
+    color: var(--color-morado);
+    border: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: 2px solid var(--color-morado);
+    border-bottom: 4px solid var(--color-morado);
+    position: relative;
+    overflow: hidden;
+    transition: 0.2s linear;
+}
