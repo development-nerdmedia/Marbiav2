@@ -11,7 +11,7 @@
     <link  rel="icon"   href="images/favicon_marbia.ico" type="image/png" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
-    <title>MARBIA | Products</title>
+    <title>MARBIA | Product</title>
 </head>
 <body>
     <header>        
@@ -173,54 +173,62 @@
                   class="formulario containerform"
                 >
                   <fieldset id="fs-frm-inputs2">
-                    <div class="form-group formname">
-                      <input
-                        type="text"
-                        name="name"
-                        id="name"
-                        placeholder=""
-                        required=""
-                        class="form-input"
-                      />
-                      <label for="full-name" class="form-label"
-                        >Nombres y Apellidos:</label
-                      >
+                    <div class="form-colum">                        
+                        <div class="form-group formname">
+                            <input
+                            id="name"
+                            name="name"
+                            type="text"
+                            placeholder=""
+                            required=""
+                            class="form-input"
+                            />
+                            <label for="full-name" class="form-label"
+                                >Name:</label
+                            >
+                        </div>                        
+                        <div class="form-group formcorreo">
+                            <input
+                            type="email"
+                            name="email"
+                            id="email"
+                            placeholder=""
+                            required=""
+                            class="form-input"
+                            />
+                            <label for="email" class="form-label">Email:</label>
+                      </div>
                     </div>
-                    <div class="form-group formcorreo">
-                      <input
-                        type="email"
-                        name="email"
-                        id="email"
-                        placeholder=""
-                        required=""
-                        class="form-input"
-                      />
-                      <label for="email" class="form-label">Correo:</label>
-                    </div>
-                    <div class="form-group formasunto">
-                      <input
-                        type="text"
-                        name="asunto"
-                        id="asunto"
-                        placeholder=""
-                        required=""
-                        class="form-input"
-                      />
-                      <label for="asunto" class="form-label">Asunto:</label>
-                    </div>
-                    <div class="form-group textarea formtextarea">
-                      <textarea
-                        rows="6"    
-                        name="message"
-                        id="textarea"
-                        placeholder=""
-                        required=""
-                        class="form-input textarea"
-                      ></textarea>
-                      <label for="message" class="form-label">Mensaje:</label>
-                    </div>
+                    <div class="form-colum">
+                        <div class="form-group formanumber">
+                            <input
+                              type="number"
+                              name="number"
+                              id="number"
+                              placeholder=""
+                              required=""
+                              class="form-input"
+                            />
+                            <label for="asunto" class="form-label">Number:</label>
+                        </div>
+                        <div class="form-group formcity">
+                            <input
+                              type="text"
+                              name="city"
+                              id="city"
+                              placeholder=""
+                              required=""
+                              class="form-input"
+                            />
+                            <label for="city" class="form-label">City:</label>
+                        </div>
+                    </div> 
+                    <div class="form-group checkbox-box">                        
+                        <input type="checkbox" required=""> 
+                        <p>Acepto los términos y condiciones y Politica de privacidad</p>
+                    </div>            
                     <button type="submit">
-                      Enviar<img src="../icons/flecha-morada.svg" alt="" /><img src="../icons/flecha-blanca.svg" alt="">
+                      Submit<img src="../icons/flecha-morada.svg" alt="" /><img src="../icons/flecha-blanca.svg" alt="">
                     </button>
                   </fieldset>
                 </form>
