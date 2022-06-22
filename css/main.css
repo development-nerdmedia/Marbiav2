@@ -130,7 +130,8 @@ header {
 .grid-productos {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 57px; }
+  grid-gap: 57px;
+  padding: 0 40px; }
   .grid-productos .producto {
     position: relative; }
     .grid-productos .producto .info {
@@ -233,6 +234,9 @@ footer {
     .detalles .content .part2 {
       width: 57%;
       padding-left: 75px; }
+      .detalles .content .part2 h2 {
+        font-weight: 500;
+        font-size: 36px; }
       .detalles .content .part2 .caracteristicas1 {
         margin-top: 20px; }
         .detalles .content .part2 .caracteristicas1 div {
