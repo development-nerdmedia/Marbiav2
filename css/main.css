@@ -134,6 +134,12 @@ header {
   padding: 0 40px; }
   .grid-productos .producto {
     position: relative; }
+    .grid-productos .producto a::before {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: red; }
     .grid-productos .producto .info {
       position: absolute;
       display: flex;
