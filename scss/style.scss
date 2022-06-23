@@ -161,6 +161,13 @@ header{
     padding: 0 40px;
     .producto {
         position: relative;
+        a::before{
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: red;
+        }
         .info{
             position: absolute;
             display: flex;
