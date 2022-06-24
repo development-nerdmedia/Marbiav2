@@ -1,4 +1,39 @@
 $(document).ready(function(){
+    // MyApp = {
+    //     select: {
+    //         init: function () {
+    //             console.log("entro");
+    //             var select = document.getElementById('categoryPortfolio');
+    //             var categoria2 = "";
+    //             var categoriaServices = localStorage.getItem("ItemServices");
+    //             var selection = document.getElementById("categoryPortfolio");
+    //             // const options = selection.options[selection.selectedOptions].value;
+    //             console.log(categoriaServices); 
+    //             // console.log(options);        
+    //             select.addEventListener('change', function () {
+    //                 var selectedOption = this.options[select.selectedIndex];
+    //                 var cateSelect = selectedOption.text.trimStart().trimEnd();
+    //                 categoria2 = cateSelect
+    //                 $("#cargarMasModulo").attr("style", "display:flex;");
+    //                 $(`.item-category`).not(`[data-categoria="${categoria2}"]`).hide();
+    //                 $(`.item-category.modulo-mas[data-categoria="${categoria2}"]`).slice(0, 6).show();
+    //             });
+    //             $("#cargarMasModulo").click(function () {                
+    //                 console.log(categoria2);
+    //                 $(`.modulo-mas[data-categoria="${categoria2}"]:hidden`).slice(0, 6).slideDown(0);
+    //                 if ($(`.modulo-mas[data-categoria="${categoria2}"]:hidden`).length == 0) {
+    //                     $("#cargarMasModulo").attr("style", "display:none;");
+    //                 }
+    //             });
+    //         }
+    //     }
+    // }   
+
+
+    // if ($('.category form').length > 0) {
+    //     MyApp.select.init();
+    // }
+
     $('#name').mask('AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA', {'translation': {
         A: {pattern: /[A-Z a-z áéúíóñÑÁÉÍÓÚ]/}
       }

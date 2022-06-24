@@ -343,9 +343,6 @@ section.acordeon {
     opacity: 0;
     z-index: -1;
     position: absolute; }
-  section.acordeon input:checked + .tab-label {
-    background: #1a252f;
-    color: #fff; }
   section.acordeon input:checked + .tab-label::after {
     transform: rotate(90deg); }
   section.acordeon input:checked ~ .tab-content {
