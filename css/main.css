@@ -46,6 +46,8 @@ header {
         color: #050505; }
     header .menu ul li.select {
       font-weight: 500; }
+    header .menu ul li:last-child {
+      padding-right: 0; }
 
 .banner {
   position: relative;
@@ -91,7 +93,7 @@ header {
       line-height: 25px;
       color: #fff;
       display: inline-block;
-      padding: 0 75px; }
+      padding: 0 26px; }
     .tarj-contacto .content a {
       text-decoration: none;
       color: #000;
@@ -203,9 +205,20 @@ footer {
     align-items: flex-end;
     padding-bottom: 70px;
     padding: 0 90px;
-    padding-bottom: 80px; }
+    padding-bottom: 80px;
+    position: relative; }
+    footer .redes::before {
+      content: '';
+      width: 95%;
+      height: 1px;
+      background-color: #000;
+      position: absolute;
+      top: -40px;
+      left: 50%;
+      transform: translateX(-50%); }
+    footer .redes div {
+      padding-top: 40px; }
     footer .redes p {
-      padding-top: 40px;
       font-weight: 400;
       font-size: 29px;
       color: #050505; }
@@ -216,6 +229,8 @@ footer {
       color: #000; }
     footer .redes img {
       opacity: 0.5; }
+  footer .redes.notlinea::before {
+    content: none; }
   footer .copi {
     background-color: #CDCDCD;
     display: flex;
