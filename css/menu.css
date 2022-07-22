@@ -1,0 +1,232 @@
+/* header {
+    box-shadow: 0px 4px 5px #7e7e7e;
+    background-color: #fff;
+    padding: 14px 0;
+    position: fixed;
+    width: 100%;
+    right: 0;
+    top: 0;
+    z-index: 5; }
+    header nav {
+      justify-content: space-between;
+      align-items: center;
+      display: flex; }
+    header .logo img {
+      width: 150px; }
+    header .menu ul {
+      list-style: none; }
+      header .menu ul li {
+        display: inline-block;
+        padding: 0 80px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 34px; }
+        header .menu ul li a {
+          text-decoration: none;
+          color: #050505; }
+      header .menu ul li.select {
+        font-weight: 500; }
+      header .menu ul li:last-child {
+        padding-right: 0; } */
+        nav ul{
+            position: initial;
+            right: initial;
+            width: initial;
+            height: initial;
+            display: initial;
+            padding-top: initial;
+        }
+        nav ul li {
+            display: initial;
+            width: initial;
+            height: initial;
+            font-size: initial;
+            margin-left: initial;
+            text-align: initial;
+            cursor: initial;
+            -webkit-transition:initial;
+            -moz-transition: initial;
+            position: initial;
+        }
+        .container {
+            width: 96%;
+            max-width: 1920px;
+            margin: 0 auto;
+        }
+
+nav{
+    box-shadow: 0px 4px 5px #7e7e7e;
+    background-color: #fff;
+    padding: 14px 0;
+    position: fixed;
+    width: 100%;
+    right: 0;
+    top: 0;
+    z-index: 5;
+    height: auto;
+}
+
+nav .logo img{
+    width: 150px;
+}
+.nav{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+nav .menu2 ul{
+    list-style: none;
+}
+
+nav .menu2 ul li{
+    display: inline-block;
+    margin: 0 80px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 34px;
+}
+
+nav .menu2 ul li a{
+    text-decoration: none;
+    color: #050505;
+}
+
+/* nav .menu2 ul li:last-child {
+    margin-right: 0;
+} */
+
+.menu2 ul li.select {
+    font-weight: 500;
+}
+
+nav .menu2 ul li.fex{
+    position: relative;
+}
+
+nav .menu2 ul li.fex:hover ul.submenu{
+    display: flex;
+}
+
+nav .menu2 ul li.fex ul.submenu{
+    position: absolute;
+    left: 0;
+    top: 35px;
+    padding-left: 0;
+    background-color: #fff;
+    display: none;
+    flex-direction: column;
+    width: 200px;
+    border-top: 3px solid #FCDA65;
+}
+nav .menu2 ul li.fex ul.submenu li{
+    padding: 10px 20px;
+    margin: 0;
+}
+nav .menu2 ul li.fex ul li a{
+    font-weight: 500;
+    font-size: 20px;
+    font-family: Barlow-light;
+    display: flex;
+    align-items: center;
+}
+
+nav .menu2 ul li.fex ul.submenu li a img{
+    display: none;
+    /* margin-left: 10px; */
+    margin-top: 5px;
+    position: absolute;
+    right: 20px;
+}
+
+nav .menu2 ul li.fex ul.submenu li:hover a{
+    font-weight: 700;
+}
+nav .menu2 ul li.fex ul.submenu li:hover ul.primero-a a,
+nav .menu2 ul li.fex ul.submenu li:hover ul.segundo-a a,
+nav .menu2 ul li.fex ul.submenu li:hover ul.tercero-a a,
+nav .menu2 ul li.fex ul.submenu li:hover ul.primero-b a,
+nav .menu2 ul li.fex ul.submenu li:hover ul.primero-c a,
+nav .menu2 ul li.fex ul.submenu li:hover ul.primero-d a{
+    font-weight: 500;
+}
+
+
+nav .menu2 ul li.fex ul.submenu li:hover a img{
+    display: block;
+}
+
+nav .menu2 ul li.fex ul.submenu  li ul{
+    display: none;
+}
+
+nav .menu2 ul li.fex ul.submenu li.primero ul.primero-a,
+nav .menu2 ul li.fex ul.submenu li.segundo ul.segundo-a,
+nav .menu2 ul li.fex ul.submenu li.tercero ul.tercero-a,
+nav .menu2 ul li.fex ul.submenu li.primero ul.primero-b,
+nav .menu2 ul li.fex ul.submenu li.primero ul.primero-c,
+nav .menu2 ul li.fex ul.submenu li.primero ul.primero-d{
+    position: absolute;
+    left: 0;
+    top: 35px;
+    padding-left: 0;
+    background-color: #F2F2F2;
+    display: none;
+    flex-direction: column;
+    width: 200px;
+    border-top: 3px solid #FCDA65;
+    left: 200px;
+    top: -3px;
+}
+
+nav .menu2 ul li.fex ul.submenu li.primero ul.primero-b{
+    width: 225px;
+}
+
+
+nav .menu2 ul li.fex ul.submenu li.primero ul.primero-c{
+    width: 230px;
+    top: 52px;
+}
+
+nav .menu2 ul li.fex ul.submenu li.segundo ul.segundo-a{
+    top: 52px;
+}
+
+nav .menu2 ul li.fex ul.submenu li.tercero ul.tercero-a{
+    top: 107px;
+}
+
+nav .menu2 ul li.fex ul.submenu ul.primero-a li.tres:hover ul.primero-d{
+    top: 105px;
+    width: 220px;
+}
+
+nav .menu2 ul li.fex ul.submenu li.primero:hover ul.primero-a,
+nav .menu2 ul li.fex ul.submenu li.segundo:hover ul.segundo-a,
+nav .menu2 ul li.fex ul.submenu li.tercero:hover ul.tercero-a,
+nav .menu2 ul li.fex ul.submenu ul.primero-a li.uno:hover ul.primero-b,
+nav .menu2 ul li.fex ul.submenu ul.primero-a li.dos:hover ul.primero-c,
+nav .menu2 ul li.fex ul.submenu ul.primero-a li.tres:hover ul.primero-d{
+    display: flex;
+}
+
+nav .menu2 ul li.fex ul.submenu li.primero ul.primero-a li:hover a,
+nav .menu2 ul li.fex ul.submenu li.segundo ul.segundo-a li:hover a,
+nav .menu2 ul li.fex ul.submenu li.tercero ul.tercero-a li:hover a,
+nav .menu2 ul li.fex ul.submenu li.tercero ul.primero-b li:hover a,
+nav .menu2 ul li.fex ul.submenu li.tercero ul.primero-c li:hover a,
+nav .menu2 ul li.fex ul.submenu li.tercero ul.primero-d li:hover a{
+    font-weight: 700;
+}
+
+nav .menu2 ul li.fex ul.submenu li.primero ul.primero-a ul.primero-b li a,
+nav .menu2 ul li.fex ul.submenu li.primero ul.primero-a ul.primero-c li a,
+nav .menu2 ul li.fex ul.submenu li.primero ul.primero-a ul.primero-d li a{
+    font-weight: 500;
+}
+
+nav .menu2 ul li.fex ul.submenu li.primero ul.primero-a ul.primero-b li:hover a,
+nav .menu2 ul li.fex ul.submenu li.primero ul.primero-a ul.primero-c li:hover a,
+nav .menu2 ul li.fex ul.submenu li.primero ul.primero-a ul.primero-d li:hover a {
+    font-weight: 700;
+}
