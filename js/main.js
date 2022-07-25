@@ -17,6 +17,25 @@ $(document).ready(function () {
         }
     }
 
+    document.addEventListener("click", (e) => {
+        if (e.target.closest("li.menumovil")) {
+            document.querySelector(".menu-mobile").classList.add('open');
+        }
+        if (e.target.closest(".menu-mobile .top img")) {
+            document.querySelector(".menu-mobile").classList.remove('open');
+        }
+        if (e.target.closest(".menu-mobile2 .top img")) {
+            document.querySelector(".menu-mobile2").classList.remove('open');
+        }
+        if (e.target.closest("li.menumovil2")) {
+            document.querySelector(".menu-mobile2").classList.add('open');
+        }
+        if (e.target.closest("section.menu-mobile2 ul li a")) {
+            document.querySelector(".menu-mobile2").classList.remove('open');
+        }
+    })
+
+
 
     if ($('.category form').length > 0) {
         MyApp.select.init();
