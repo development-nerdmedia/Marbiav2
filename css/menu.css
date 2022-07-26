@@ -225,6 +225,10 @@ nav .menu2 ul li.fex ul.submenu li.primero ul.primero-a ul.primero-d li a{
     font-weight: 500;
 }
 
+section.menu-mobile2{
+    display: none;
+}
+
 nav .menu2 ul li.fex ul.submenu li.primero ul.primero-a ul.primero-b li:hover a,
 nav .menu2 ul li.fex ul.submenu li.primero ul.primero-a ul.primero-c li:hover a,
 nav .menu2 ul li.fex ul.submenu li.primero ul.primero-a ul.primero-d li:hover a {
